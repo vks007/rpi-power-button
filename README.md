@@ -12,6 +12,13 @@ PIN_LED = 4 # GPIO4 / physical pin #7
 PIN_BUTTON = 3 # GPIO3 / physical pin #5
 ```
 
+# Prerequisites
+The earlier functionality was broken due to a recent linux kernel update. Read about it [here](https://pypi.org/project/rpi-lgpio/).
+Solution is to that you simply need to install rpi-lpgio, which will automatically uninstall rpi-gpio. [Source](https://rpi-lgpio.readthedocs.io/en/latest/install.html).
+```
+sudo apt update && sudo apt install python3-rpi-lgpio
+```
+
 # Installation
 
 1. [Connect to your Raspberry Pi via SSH](https://howchoo.com/g/mgi3mdnlnjq/how-to-log-in-to-a-raspberry-pi-via-ssh)
